@@ -48,7 +48,7 @@ $(document).ready(function(){
 	});
 	$(document).keyup(function(){
 		$(".ryu-cool").hide();
-		$(".ryu-still").show();
+		$(".ryu-ready").show();
 		$(".main").removeClass('main-x');
 	});
 });
