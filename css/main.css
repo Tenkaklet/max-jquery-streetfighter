@@ -1,4 +1,7 @@
-
+@font-face {
+	font-family: Airloon;
+	src: url(../font/Ailerons.ttf);
+}
 
 body {
 	background-color: black;
@@ -12,7 +15,17 @@ body {
 	position: relative;
 	z-index: 1;
 }
-
+.main-x {
+	background-image: url('../images/street-bg.gif');
+	background-repeat: no-repeat;
+	margin-top: 110px;
+	background-size: cover;
+	padding-left: 100px;
+	min-width: 1200px;
+	height: 500px;
+	position: relative;
+	z-index: 1;
+}
 .ryu {
 	width: 659px;
 	height: 494px;
@@ -21,7 +34,7 @@ body {
 	width: 659px;
 	height: 494px;
 }
-.ryu-ready, .ryu-throwing {
+.ryu-ready, .ryu-throwing, .ryu-cool {
 	display: none;
 }
 .ryu-ready {
@@ -32,6 +45,24 @@ body {
 }
 .ryu-throwing {
 	background-image: url('../images/ryu-throwing-hadouken.png');
+}
+.ryu-cool {
+	background-image: url('../images/ryu-cool.gif');
+	background-repeat: no-repeat;
+	width: 950px;
+	height: 494px;
+	padding: 30px;
+}
+.ryu-cool > h2 {
+	font-family: 'Airloon';
+	display: inline-block;
+	float: right;
+	color: #FFF;
+	background-color: #a80000;
+	padding: 20px;
+	font-size: 3em;
+	margin-top: 150px;
+	margin-left: 10em;
 }
 .hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
 	background-repeat: no-repeat;
