@@ -1,4 +1,4 @@
-//Streetfighter Animation
+//Streetfighter Working
 
 // Sound
 function playHadouken () {
