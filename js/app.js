@@ -11,10 +11,14 @@ $(document).ready(function(){
 	$(".ryu").mouseenter(function(){
 		$(".ryu-still").hide();
 		$(".ryu-ready").show();
+		$(".ryu-throwing").hide();
+		$(".ryu-cool").hide();
 	})
 	.mouseleave(function(){
 		$('.ryu-still').show();
 		$(".ryu-ready").hide();
+		$(".ryu-throwing").hide();
+		$(".ryu-cool").hide();
 	})
 	//Play Hadouken sound + animate
 	.mousedown(function(){
@@ -41,7 +45,7 @@ $(document).ready(function(){
 		if (keypressed.keyCode === 88) {
 			$(".ryu-ready").hide();
 			$(".ryu-still").hide();
-			$(".ryu-throwing").hide();
+			$(".ryu-throwing").unbind('.ryu-throwing', keypressed);
 			$(".ryu-cool").show();
 			$(".main").addClass('main-x');
 		}	
